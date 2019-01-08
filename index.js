@@ -1,1 +1,1 @@
-module.exports = require("./lib/remote-attach-to-tangle");
+module.exports = require('./lib/remote-attach-to-tangle');
