@@ -3,7 +3,26 @@
   "version": "1.0.0",
   "description": "For latest iota.js (version > 1.x.x) attachToTangle remote PoW",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pasupulaphani/iota.js-remote-pow.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "bugs": {
+    "url": "https://github.com/pasupulaphani/iota.js-remote-pow/issues"
+  },
+  "homepage": "https://github.com/pasupulaphani/iota.js-remote-pow#readme",
+  "keywords": [
+    "attachToTangle",
+    "proof-or-work",
+    "pow",
+    "iota",
+    "iota.js"
+  ],
   "scripts": {
+    "lint": "node_modules/.bin/eslint ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Phaninder Pasupula",
@@ -11,5 +30,7 @@
   "dependencies": {
     "node-fetch": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^5.12.0"
+  }
 }

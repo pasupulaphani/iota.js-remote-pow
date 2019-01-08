@@ -1,5 +1,5 @@
 # iota.js-remote-pow
-For latest iota.js (version > 1.x.x) attachToTangle remote PoW. Library to delegate Proof-of-work 
+For latest iota.js (version >= 1.x.x) attachToTangle remote PoW. Library to delegate Proof-of-work 
 
 ### How to Use
 
@@ -19,4 +19,4 @@ const iota = composeAPI({
 - Add more providers (ATM uses powsrvio by default)
 
 ##### Copy
-This repo is a modified copy of the "Curl Remote - IOTA.js Library Shim"(https://gitlab.com/powsrv.io/js/iota.lib.js.powsrvio). We thank the developers for the preliminary work
+This repo is a modified version of the "iota.lib.js.powsrvio"(https://gitlab.com/powsrv.io/js/iota.lib.js.powsrvio) to work with latest IOTA.js (version >= 1.x.x). We thank the developers for the preliminary work
