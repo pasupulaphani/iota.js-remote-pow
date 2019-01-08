@@ -1,6 +1,6 @@
 {
   "name": "iota.js-remote-pow",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "For latest iota.js (version > 1.x.x) attachToTangle remote PoW",
   "main": "index.js",
   "repository": {
@@ -23,7 +23,10 @@
   ],
   "scripts": {
     "lint": "node_modules/.bin/eslint ./lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish:patch": "npm version patch && npm run publish:push",
+    "publish:minor": "npm version minor && npm run publish:push",
+    "publish:major": "npm version major && npm run publish:push",
+    "publish:push": "git push origin master --follow-tags && npm publish"
   },
   "author": "Phaninder Pasupula",
   "license": "MIT",
