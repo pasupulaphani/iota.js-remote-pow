@@ -51,7 +51,7 @@ const iota = composeAPI({
         <span>thetangle</span>
       </td>
       <td class="description last">
-        <span>Provider name. thetangle/powsrv</span>
+        <span>Provider name. Available: thetangle, powsrv</span>
       </td>
     </tr>
     <tr>
