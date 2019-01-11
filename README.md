@@ -48,10 +48,10 @@ const iota = composeAPI({
         <span class="param-type">string</span>
       </td>
       <td>
-        <p>thetangle</p>
+        <span>thetangle</span>
       </td>
       <td class="description last">
-        <p>Provider name. thetangle/powsrv</p>
+        <span>Provider name. thetangle/powsrv</span>
       </td>
     </tr>
     <tr>
@@ -60,10 +60,10 @@ const iota = composeAPI({
         <span class="param-type">integer</span>
       </td>
       <td>
-        <p>5000</p>
+        <span>5000</span>
       </td>
       <td class="description last">
-        <p>attachToTangle timeout in milliseconds</p>
+        <span>attachToTangle timeout in milliseconds</span>
       </td>
     </tr>
     <tr>
@@ -72,10 +72,10 @@ const iota = composeAPI({
         <span class="param-type">string</span>
       </td>
       <td>
-        <p>null</p>
+        <span>null</span>
       </td>
       <td class="description last">
-        <p>Provider API key if any</p>
+        <span>Provider API key if any</span>
       </td>
     </tr>
     <tr>
@@ -84,10 +84,10 @@ const iota = composeAPI({
         <span class="param-type">object</span>
       </td>
       <td>
-        <p>null</p>
+        <span>null</span>
       </td>
       <td class="description last">
-        <p>Inject your custom logger</p>
+        <span>Inject your custom logger</span>
       </td>
     </tr>
   </tbody>
