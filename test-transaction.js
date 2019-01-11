@@ -5,7 +5,7 @@ const remotePoW = require('./index');
 const attachToTangle = remotePoW();
 
 const iota = composeAPI({
-  provider: 'https://nodes.thetangle.org:443',
+  provider: 'https://node04.iotatoken.nl:443',
   attachToTangle
 });
 
@@ -30,5 +30,5 @@ async function start(seed) {
 
 }
 
-const seed = '<seed>';
+const seed = 'XDETDPOUHPRFA9GBTNTPSYWPZVHVSJQP9DZHF9YMOLPIDHYMHHNMDJLQZM9KGMZAZSUQQ9JWRBWYJLZPU';
 start(seed);
