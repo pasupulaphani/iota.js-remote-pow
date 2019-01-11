@@ -22,7 +22,8 @@
     "iota.js"
   ],
   "scripts": {
-    "lint": "node_modules/.bin/eslint ./lib",
+    "lint": "eslint ./lib ./test",
+    "test": "mocha --reporter spec && npm run lint",
     "publish:patch": "npm version patch && npm run publish:push",
     "publish:minor": "npm version minor && npm run publish:push",
     "publish:major": "npm version major && npm run publish:push",
@@ -35,6 +36,8 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.0"
+    "eslint": "^5.12.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
   }
 }
