@@ -1,5 +1,5 @@
 # iota.js-remote-pow
-For latest iota.js (version >= 1.x.x) attachToTangle remote PoW. Library to delegate Proof-of-work 
+For latest iota.js (version >= 1.x.x) attachToTangle remote PoW. Library to delegate Proof-of-work. [More info](https://medium.com/@phaninder/iota-proof-of-work-remote-vs-local-explained-1cbd89392a79)
 
 
 ### Getting started
