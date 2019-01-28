@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "removeComments": true,
+    "outDir": "./built",
+    "target": "es5"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

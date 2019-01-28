@@ -2,7 +2,7 @@
   "name": "iota.js-remote-pow",
   "version": "1.0.1",
   "description": "For latest iota.js (version > 1.x.x) attachToTangle remote PoW",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/pasupulaphani/iota.js-remote-pow.git"
@@ -23,7 +23,8 @@
   ],
   "scripts": {
     "lint": "eslint ./lib ./test",
-    "test": "mocha --reporter spec && npm run lint",
+    "test": "jest",
+    "compile": "tsc",
     "publish:patch": "npm version patch && npm run publish:push",
     "publish:minor": "npm version minor && npm run publish:push",
     "publish:major": "npm version major && npm run publish:push",
@@ -36,8 +37,21 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.18",
     "eslint": "^5.12.0",
-    "mocha": "^5.2.0",
-    "should": "^13.2.3"
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
   }
 }

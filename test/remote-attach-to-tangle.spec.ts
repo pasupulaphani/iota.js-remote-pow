@@ -1,6 +1,4 @@
-require('should');
-
-const remoteATT = require('../lib/remote-attach-to-tangle');
+const { remoteATT } = require('../src/remote-attach-to-tangle');
 
 describe('remoteATT', () => {
   describe('API', () => {
@@ -9,7 +7,9 @@ describe('remoteATT', () => {
         provider: 'INVALID'
       };
   
-      (() => remoteATT(options)).should.throw(/"provider" must/);
+      expect(() => {
+        remoteATT(options);
+      }).toThrow(/"provider" must/);
     });
 
     it('throw error on invalid timeoutMs', () => {
@@ -17,13 +17,17 @@ describe('remoteATT', () => {
         timeoutMs: 'INVALID'
       };
   
-      (() => remoteATT(options)).should.throw(/"timeoutMs" must/);
+      expect(() => {
+        remoteATT(options);
+      }).toThrow(/"timeoutMs" must/);
     });
 
     it('allow empty options', () => {
       const options = {};
   
-      (() => remoteATT(options)).should.not.throw();
+      expect(() => {
+        remoteATT(options);
+      }).not.toThrow();
     });
 
   });
